@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <DojoShows msg="All Shows"/>
+    <h1>Pendiente</h1>
   </div>
 </template>
 
