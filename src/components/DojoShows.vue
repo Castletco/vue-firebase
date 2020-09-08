@@ -4,15 +4,20 @@
       <h2>{{ msg }}</h2>
       <b-table striped hover :items="shows" :fields="headers"></b-table>
     </div>
+    <RegistroShow message="Add a Show" />
   </b-container>
 </template>
 
 <script>
 import { db } from '@/firebase'
+import RegistroShow from '@/components/RegistroShow.vue'
 export default {
   name: 'DojoShows',
   props: {
     msg: String
+  },
+  components: {
+    RegistroShow
   },
   data () {
     return {
